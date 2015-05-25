@@ -17,11 +17,7 @@ Usage:
 ";
 
 fn env_vars_hash_map() -> HashMap<String, String> {
-    let mut table = HashMap::new();
-    for (var_name, var_value) in env::vars() {
-        table.insert(var_name, var_value);
-    }
-    return table;
+    return env::vars().collect();
 }
 
 fn main() {
