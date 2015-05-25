@@ -2,11 +2,10 @@ extern crate mustache;
 extern crate docopt;
 
 use docopt::Docopt;
-use std::fs::File;
-use std::io::Read;
-use std::io;
-use std::env;
 use std::collections::hash_map::HashMap;
+use std::env;
+use std::fs::File;
+use std::io::{self,Read};
 
 static USAGE : &'static str = "
 rustache
