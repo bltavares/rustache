@@ -17,7 +17,7 @@ Usage:
 ";
 
 fn env_vars_hash_map() -> HashMap<String, String> {
-    return env::vars().collect();
+    env::vars().collect()
 }
 
 fn main() {
